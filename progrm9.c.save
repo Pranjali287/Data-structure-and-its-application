@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+struct node
+{
+	int cf,px,py,pz;
+	int flag;
+	struct node *link;
+};
+typedef struct node NODE;
+NODE *getnode()
+{
+	NODE*x;
+	x=(NODE*)molloc(sizeof(NODE));
+	if(x==NULL)
+	{
+		printf(
